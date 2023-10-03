@@ -9,6 +9,8 @@ import PreviewPosts from "./components/Sanity/PreviewPosts";
 import PreviewProvider from "./components/Sanity/PreviewProvider";
 
 export default async function Home() {
+  // This is a comment from the stagin branch
+
   const posts = await sanityFetch<SanityDocument[]>({ query: postsQuery });
   const isDraftMode = draftMode().isEnabled;
 
