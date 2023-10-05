@@ -6,6 +6,8 @@ import Image from "next/image";
 import imageUrlBuilder from "@sanity/image-url";
 import { client } from "@/sanity/lib/client";
 
+export const revalidate = 0;
+
 const builder = imageUrlBuilder(client);
 
 export default function Posts({ posts = [] }: { posts: SanityDocument[] }) {
