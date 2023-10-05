@@ -1,5 +1,5 @@
 // ./nextjs-app/app/_components/Posts.tsx
-
+"use client";
 import Link from "next/link";
 import type { SanityDocument } from "@sanity/client";
 import Image from "next/image";
