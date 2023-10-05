@@ -8,7 +8,6 @@ import { draftMode } from "next/headers";
 import PreviewPosts from "./components/Sanity/PreviewPosts";
 import PreviewProvider from "./components/Sanity/PreviewProvider";
 
-export const revalidate = 0;
 export default async function Home() {
   // This is a comment from the stagin branch
 
