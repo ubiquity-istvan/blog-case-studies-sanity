@@ -6,6 +6,7 @@ import imageUrlBuilder from "@sanity/image-url";
 import { client } from "@/sanity/lib/client";
 
 const builder = imageUrlBuilder(client);
+export const revalidate = 10;
 
 export default function Posts({ posts = [] }: { posts: SanityDocument[] }) {
   const title = posts.length === 1 ? `1 Post` : `${posts.length} Posts`;
