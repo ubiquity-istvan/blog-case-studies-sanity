@@ -11,6 +11,7 @@ import { client } from "@/sanity/lib/client";
 import SanityImage from "./SanityImage";
 
 const builder = imageUrlBuilder(client);
+// export const revalidate = false;
 
 export default function Post({ post }: { post: SanityDocument }) {
   const myPortableTextComponents = {
